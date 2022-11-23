@@ -23,9 +23,7 @@ gulp.task('styles', function () { // создаем задачу которая 
             suffix: ".min", //
         })) //
         // добавляет авто префиксы для браузеров
-        .pipe(autoprefixer({
-            cascade: false
-        }))
+        .pipe(autoprefixer())
         // очищает этот файл
         .pipe(cleanCSS({
             compatibility: 'ie8'
