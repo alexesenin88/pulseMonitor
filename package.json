@@ -18,11 +18,5 @@
     "gulp-sass": "^5.1.0",
     "node-sass": "^8.0.0",
     "sass": "^1.56.1"
-  },
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
-  ]
+  }
 }

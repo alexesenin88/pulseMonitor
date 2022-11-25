@@ -1,0 +1,190 @@
+.promo{
+    margin-bottom: 0;
+    width: 100%;
+    min-height: 650px;
+    background: url('../img/bg_header.jpg') center (center/cover) no-repeat;
+    padding: 21px 0 93px 0;
+    &__main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__main-content{
+        margin-top: 91px;
+    }
+    &__header{
+        text-align: right;
+    }
+    &__heading{
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &__subheading{
+        font-weight: 500;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 17px;
+    }
+    &__icons{
+        margin-top: 61px;
+        display: flex;
+        justify-content: space-between;
+        min-width: 424px;
+    }
+    &__icon{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    &__icon-descr{
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+        margin-top: 20px;
+        span{
+            display: block;
+        }
+    }
+    &__call-to-action{
+        margin-top: 68px;
+        @extend .promo__main-content;
+    }
+    &__go-to-catalog{
+        margin-top: 10px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        a{
+            @extend .promo__go-to-catalog;
+            text-transform: uppercase;
+            margin-left: 5px;
+            text-decoration: underline;
+            
+        }
+    }
+}
+// @media (max-width: 1023px){
+//     .promo{
+//         padding: 20px 16px 50px 16px;
+//         background-position: center left;
+//         &__main-content{
+//             align-items: center;
+//         }
+//         &__header{
+//             text-align: center;
+//         }
+//         &__heading{
+//             font-size: 30px;
+//         }
+//         &__subheading{
+//             font-size: 20px;  
+//         }
+        
+//     }
+// }
+// @media (max-width: 767px){
+//     .promo{
+//         padding: 20px 16px 50px 16px;
+//         min-height: 600px;
+//         &__main-content{
+//             margin-top: 50px;
+//         }
+//         &__go-to-catalog{
+//             font-size: 14px;
+//             a{
+//                 font-size: 14px;
+//             }
+//         }
+
+//     }
+// }
+// @media (max-width: 425px){
+//     .promo{
+//         background-position: center left;
+//         padding: 0;
+//         &__icons{
+//             max-width: 100%;
+//             flex-direction: column;
+//         }
+//         &__icon{
+//             margin-bottom: 20px;
+//         }
+//         &__go-to-catalog{
+//             margin-bottom: 50px;
+//         }
+//     }
+
+// }
+@media (max-width: 1023px){
+    .promo{
+        background-position: top left;
+        &__header,
+        &__call-to-action,
+        &__icons{
+            margin-right: 30px;
+        }
+    }
+}
+@media (max-width: 767px){
+    .promo{
+        // background-image: url(../img/bg_header_mobile.jpg);
+        &__header{
+            text-align: center;
+            width: 100%;
+            margin-right: 0;
+        }
+        &__icons{
+            justify-content: space-around;
+            min-width: 100%;
+            margin-right: 0;
+        }
+        &__call-to-action{
+            align-items: center;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+}
+@media (max-width: 424px){
+    .promo{
+        background-image: url(../img/bg_header_mobile.jpg);
+        background-position: center center;
+        padding-bottom: 50px;
+        &__main-content{
+            margin-top: 40px;
+        }
+        &__icons{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        &__icon{
+            margin-bottom: 25px;
+        }
+        &__icon-descr{
+            margin-top: 10px;
+        }
+        &__heading{
+            font-size: 30px;
+        }
+        &__subheading{
+            font-style: 20px;
+        }
+        &__call-to-action{
+            margin-top: 38px;
+        }
+
+    }
+}
+

@@ -1,3 +1,30 @@
 @import "base/mixins";
 @import "base/variebles";
 @import "base/fonts";
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+
+.center{
+    padding: 0 calc(50% - 470px);
+}
+*{
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    box-sizing: border-box;
+}
+@media (max-width: 1023px){
+    .center{
+        padding: 0 calc(50% - 412px);
+    }
+}
+@media (max-width: 767px){
+    .center{
+        padding: 0 calc(50% - 284px);
+    }
+}
+@media (max-width: 425px){
+    .center{
+        padding: 0 16px;
+    }
+
+}

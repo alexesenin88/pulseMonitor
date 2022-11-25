@@ -378,3 +378,11 @@ template {
 [hidden] {
   display: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
